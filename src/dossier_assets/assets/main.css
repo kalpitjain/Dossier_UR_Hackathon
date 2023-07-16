@@ -1,0 +1,346 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "McLaren", cursive;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+h6 {
+  font-weight: 600;
+}
+
+body {
+  background-image: url("https://www.transparenttextures.com/patterns/shattered.png");
+}
+
+/* Dossier CSS */
+/* Header */
+
+.header {
+  background-color: #00191d;
+  box-shadow: 0 0 0.3rem 0 #00191d;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 1.5rem;
+  padding-bottom: 0;
+}
+
+.header h1 {
+  margin: 1rem;
+  margin-top: -0.5rem;
+  color: #00d5ff;
+}
+
+.header h6 {
+  color: #00d5ff;
+  margin-right: 3rem;
+}
+
+/* Form Box */
+form.create-log {
+  position: relative;
+  width: 54%;
+  margin: 9.2rem auto 5rem auto;
+  background: #9beeff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 5px #00191d;
+  text-align: center;
+}
+form.create-log input,
+form.create-log textarea {
+  background: #9beeff;
+  width: 100%;
+  border: none;
+  padding: 0.25rem;
+  outline: none;
+  font-size: 1rem;
+  resize: none;
+  text-align: center;
+}
+form.create-log button {
+  position: absolute;
+  right: 1.1rem;
+  bottom: -1.1rem;
+  background: #00191d;
+  color: #00d5ff;
+  border: none;
+  border-radius: 50%;
+  width: 2.25rem;
+  height: 2.25rem;
+  box-shadow: 0 1px 3px #00191d;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  z-index: 0;
+}
+
+.message {
+  margin-bottom: -0.8rem;
+  margin-left: -0.8rem;
+  opacity: 50%;
+}
+
+.switch {
+  position: absolute;
+  background: #00191d;
+  color: #00d5ff;
+  box-shadow: 0 1px 3px #00191d;
+  left: 125%;
+  top: -2.5rem;
+  width: 6rem;
+  cursor: pointer;
+  padding: 0.3rem;
+  border-radius: 0.25rem;
+}
+
+.switch:hover {
+  background-color: #00d5ff;
+  color: #00191d;
+}
+
+/* Log */
+.log {
+  background: #9beeff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px #00191d;
+  padding: 0.625rem;
+  width: 80%;
+  margin: -2rem 10% 5rem 10%;
+  float: left;
+  text-align: center;
+}
+.log h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.log p {
+  font-size: 1rem;
+  margin-bottom: -1rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: left;
+}
+
+.date-time {
+  font-size: 1rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: left;
+}
+
+.log button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #00191d;
+  background-color: #9beeff;
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.log button :hover {
+  color: #ffff;
+}
+
+.readMoreLink {
+  color: #0000ff;
+}
+
+.readMoreLink:hover {
+  cursor: pointer;
+  color: #8a2be2;
+}
+
+.readLessLink {
+  color: #8a2be2;
+}
+
+.readLessLink:hover {
+  cursor: pointer;
+  color: #0000ff;
+}
+
+#time {
+  position: relative;
+  bottom: -2.5rem;
+  padding: 0rem 0rem 0rem 0rem;
+  font-size: 1rem;
+  margin: 0;
+  opacity: 0.7;
+}
+
+#date {
+  position: relative;
+  bottom: -2.5rem;
+  padding: 0rem 0rem 0rem 0rem;
+  margin: 0;
+  font-size: 0.7rem;
+  opacity: 0.7;
+}
+
+/* Dossier Finace CSS */
+#screen {
+  margin-top: 8rem;
+}
+
+.blocks {
+  text-align: center;
+  width: 80%;
+  margin: 1rem auto 3rem auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 5px #00191d;
+}
+
+/* Faucet */
+.faucet {
+  background-color: #72ee72;
+}
+
+.faucet h1 {
+  color: #082a05;
+}
+
+.faucet h6 {
+  color: #082a05;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.faucet button {
+  margin-top: 1.2rem;
+}
+
+/* Balance */
+.balance {
+  background-color: #ffe065;
+}
+
+.balance h1 {
+  color: #2a2605;
+  margin-bottom: 2rem;
+}
+
+.balance h6 {
+  color: #2a2605;
+  margin-top: 1.5rem;
+}
+
+.balance input {
+  background-color: #e8ecc3;
+  margin: 1rem 10% 1rem auto;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 0.2rem;
+  text-align: left;
+  box-shadow: 0 1px 5px #00191d;
+}
+
+/* Transfer */
+.transfer {
+  background-color: #ff7c65;
+}
+
+.transfer-div {
+  margin: 1rem;
+}
+
+.transfer input {
+  background-color: #f5d4d4;
+  border: none;
+  border-radius: 0.2rem;
+  box-shadow: 0 1px 5px #00191d;
+}
+
+.transfer h1 {
+  color: #2a0505;
+}
+
+.transfer h3 {
+  color: #2a0505;
+  margin: 1rem;
+}
+
+.transfer h6 {
+  color: #640101;
+  margin-top: 1rem;
+}
+
+.transfer button {
+  margin-top: 1.5rem;
+}
+
+/* Dossier Acccount */
+/* Account Details Block */
+
+.account-details {
+  margin-top: 9.2rem;
+  background-color: #b1b7ff;
+}
+
+.account-details h1 {
+  margin-top: -1rem;
+}
+
+.account-details h5 {
+  margin-top: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.activityLogHeading {
+  margin-top: -1.75rem;
+  margin-bottom: 1.75rem;
+  padding: 0.5rem;
+  background-color: #00191d;
+}
+
+.activityLogHeading h3 {
+  padding-top: 0.5rem;
+  color: #00d5ff;
+}
+
+.activityDescription {
+  padding: 0.5rem;
+  padding-top: 0.5rem;
+  background-color: #b1b7ff;
+  margin-bottom: 1rem;
+}
+
+.activityDescription h4 {
+  font-weight: 800;
+  margin-bottom: -0.2rem;
+}
+
+.activityLog {
+  padding: 0.5rem;
+  padding-top: 0.75rem;
+  background-color: #f8b1ff;
+  margin-bottom: 1.5rem;
+}
+
+.scrollable {
+  height: 45rem;
+  overflow-y: auto;
+}

@@ -1,0 +1,32 @@
+type Log = 
+ record {
+   content: text;
+   date: text;
+   time: text;
+   title: text;
+   userId: text;
+ };
+type ActivityLog = 
+ record {
+   activity: text;
+   amount: text;
+   date: text;
+   time: text;
+   user: text;
+ };
+service : {
+  balanceOf: (principal) -> (nat) query;
+  createActivityLog: (text, text, text, text, text) -> () oneway;
+  createLog: (text, text, text, text, text) -> () oneway;
+  deductCreateLogFee: () -> (text);
+  deductDeleteLogFee: () -> (text);
+  faucetAmount: () -> (nat) query;
+  getCreateLogFee: () -> (nat) query;
+  getDeleteLogFee: () -> (nat) query;
+  getSymbol: () -> (text) query;
+  payOut: () -> (text);
+  readActivityLogs: () -> (vec ActivityLog) query;
+  readLogs: () -> (vec Log) query;
+  removeLog: (nat) -> () oneway;
+  transfer: (principal, nat) -> (text);
+}
